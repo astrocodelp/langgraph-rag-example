@@ -190,6 +190,7 @@ workflow.addConditionalEdges(
 workflow.addEdge('webSearch', 'generate');
 workflow.addEdge('generate', END);
 
+// Compile the workflow
 const app = workflow.compile();
 
 // Visualize the graph
